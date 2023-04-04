@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 80vw;
+}
+
+.image{
+    /* margin: auto; */
+    /* background-color: aqua; */
+    border-radius: 80px;
+    height: 100%;
+    width: 10vw;
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all 0.5s ease-in;
+    overflow: hidden;
+}
+
+section h4 {
+    display: none;
+    transition: all 0.3s ease-out 1s;
+}
+
+section.active{
+    width: 100%;
+}
+
+section.active h4{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: large;
+    color: azure;
+    text-align: center;
+
+}
+
+#img1{
+    background: url(kevin-hart.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* using shorthand property of background for rest of the images*/
+
+#img2{
+    background: url(GeorgeClooney.jpg) no-repeat center center/cover;
+}
+
+#img3{
+    background: url(Dhanush.jpg) no-repeat center center/cover;
+}
+
+#img4{
+    background: url(vijay-thallapati.jpg) no-repeat center center/cover;
+}
+
+#img5{
+    background: url(ChrisEvans.jpg) no-repeat center center/cover;
+}
+
